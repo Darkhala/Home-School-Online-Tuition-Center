@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #cce0ff, #007bff);
+    color: #333;
+}
+header {
+    background: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+.logo img {
+    height: 40px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+ul li a:hover {
+    text-decoration: underline;
+}
+.cta-button {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.cta-button:hover {
+    background: white;
+    color: #007bff;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background: #007bff;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+/* Blog Header */
+.blog-header {
+    text-align: center;
+    padding: 50px 20px;
+    color: #007bff;
+    padding-top: 5rem;
+}
+
+.blog-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.blog-nav a {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.blog-nav a:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* Blog Content */
+.blog-content {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+article {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    color: #007bff;
+}
+
+article img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+article p{
+    color: #007bff;
+}
+
+article ul {
+    padding-left: 20px;
+}
+
+article ul li {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+ul.paro {
+    display: block !important; /* Ensure visibility */
+    padding-left: 20px; /* Keep consistent spacing */
+    margin-top: 10px;
+    position: relative; /* Prevent unwanted repositioning */
+}
+
+
+footer {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: white;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    ul.active {
+        display: flex;
+    }
+
+    ul li {
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    ul.paro {
+        font-size: 16px; /* Keep text readable */
+        line-height: 1.5; /* Improve spacing */
+        position: static; /* Ensure it does not shift */
+    }
+    /* Ensure images fit smaller screens properly */
+    article img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    /* Improve text readability */
+    article h2 {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    article p {
+        font-size: 16px; /* Ensure text remains readable */
+        line-height: 1.6;
+    }
+
+    /* Adjust blog navigation for better usability */
+    .blog-nav {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+    }
+
+    .blog-nav a {
+        width: 90%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    /* Ensure footer content is not squeezed */
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    /* Ensure call-to-action button does not shrink */
+    .cta-button {
+        padding: 12px 20px;
+        font-size: 16px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    /* Improve visibility of article lists */
+    ul.paro {
+        padding-left: 15px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Fix header spacing on mobile */
+    header {
+        padding: 10px 0;
+    }
+
+    /* Adjust spacing between articles */
+    article {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+}

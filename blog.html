@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Online Tuition Center</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> 
+                <img src="images/online school logo.png" alt="Logo"> 
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="Courses.html" class="cta-button">Get Started</a>
+        </nav>
+    </header>
+    
+    <section class="blog-header">
+        <h1>Our Blog</h1>
+        <nav class="blog-nav">
+            <a href="#focus-tips">5 Tips to Help Your Child Focus During Online Learning</a>
+            <a href="#early-reading">The Benefits of Early Reading</a>
+            <a href="#science-fun">Making Science Fun for Kids</a>
+            <a href="#parental-support">How Parents Can Support Online Learning</a>
+        </nav>
+    </section>
+    
+    <section class="blog-content">
+        <article id="focus-tips">
+            <h2>5 Tips to Help Your Child Focus During Online Learning</h2>
+            <img src="images/focus on class.jpg" alt="Child focusing on online class">
+            <p>Online learning requires discipline and focus. Here are five ways to help your child stay engaged:</p>
+            <ul class="paro">
+                <li><strong>Set a Dedicated Learning Space:</strong> A quiet, organized area minimizes distractions.</li>
+                <li><strong>Establish a Routine:</strong> Consistent schedules improve focus and motivation.</li>
+                <li><strong>Encourage Breaks:</strong> Short breaks between lessons help reset attention.</li>
+                <li><strong>Use Interactive Tools:</strong> Gamified learning keeps students engaged.</li>
+                <li><strong>Stay Involved:</strong> Regular check-ins boost motivation and accountability.</li>
+            </ul>
+        </article>
+        
+        <article id="early-reading">
+            <h2>The Benefits of Early Reading</h2>
+            <img src="images/help read.jpg" alt="Parent reading with child">
+            <p>Introducing reading at an early age has lifelong benefits:</p>
+            <ul class="paro">
+                <li><strong>Builds Vocabulary:</strong> Exposure to words improves language skills.</li>
+                <li><strong>Enhances Imagination:</strong> Books take children on adventures beyond their world.</li>
+                <li><strong>Develops Cognitive Skills:</strong> Reading strengthens memory and comprehension.</li>
+                <li><strong>Boosts Academic Performance:</strong> Early readers perform better in school.</li>
+            </ul>
+        </article>
+        
+        <article id="science-fun">
+            <h2>Making Science Fun for Kids</h2>
+            <img src="images/kid do science.jpg" alt="Kids doing a science experiment">
+            <p>Science doesn’t have to be boring! Try these engaging activities:</p>
+            <ul class="paro">
+                <li><strong>Simple Home Experiments:</strong> Baking soda volcanoes, rainbow milk, and DIY slime.</li>
+                <li><strong>Outdoor Exploration:</strong> Nature walks, bug hunts, and stargazing.</li>
+                <li><strong>Science Games & Apps:</strong> Interactive apps make learning fun.</li>
+                <li><strong>Storytelling with Science:</strong> Reading about famous scientists and discoveries.</li>
+            </ul>
+        </article>
+        
+        <article id="parental-support">
+            <h2>How Parents Can Support Online Learning</h2>
+            <img src="images/parent with child.jpg" alt="Parent helping child with online class">
+            <p>Parental support is key to a child’s online learning success. Here’s how you can help:</p>
+            <ul class="paro">
+                <li><strong>Provide Emotional Support:</strong> Encourage, motivate, and reassure your child.</li>
+                <li><strong>Monitor Progress:</strong> Regularly check assignments and participation.</li>
+                <li><strong>Communicate with Teachers:</strong> Stay in touch to address challenges.</li>
+                <li><strong>Encourage a Growth Mindset:</strong> Praise effort, not just results.</li>
+            </ul>
+        </article>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Home School Online Tuition Center. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector("ul").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

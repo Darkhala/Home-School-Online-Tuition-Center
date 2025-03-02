@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #cce0ff, #007bff);
+    color: #333;
+}
+header {
+    background: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+.logo img {
+    height: 40px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+ul li a:hover {
+    text-decoration: underline;
+}
+.cta-button {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.cta-button:hover {
+    background: white;
+    color: #007bff;
+}
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background: #007bff;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    color: #007bff;
+    padding: 20px;
+}
+.hero-logo {
+    width: 12rem;
+    margin-bottom: 20px;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.hero-buttons .btn {
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+.pricing-section {
+    text-align: center;
+    padding: 60px 20px;
+    color: #007bff;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 250px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.why-choose-us {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    max-width: 250px;
+}
+
+.feature i {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+footer {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: white;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    ul.active {
+        display: flex;
+    }
+
+    ul li {
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero {
+        padding-top: 10rem;
+    }
+    
+    .hero-logo {
+        width: 8rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons .btn {
+        padding: 10px 15px;
+    }
+    
+    .pricing-section {
+        padding-top: 5rem;
+    }
+    
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pricing-card {
+        max-width: 100%;
+        width: 90%;
+    }
+    
+    .price {
+        font-size: 1.3rem;
+    }
+    
+    .whatsapp-button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .why-choose-us {
+        padding: 40px 15px;
+    }
+    
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature {
+        max-width: 90%;
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .feature i {
+        font-size: 1.8rem;
+    }
+    
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
