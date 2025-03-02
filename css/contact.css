@@ -69,6 +69,7 @@ ul li a:hover {
     margin: 4px 0;
     transition: 0.3s;
 }
+/* Hero Section */
 .hero {
     display: flex;
     flex-direction: column;
@@ -76,29 +77,18 @@ ul li a:hover {
     align-items: center;
     text-align: center;
     color: #007bff;
-    padding-top: 5rem;
+    padding-top: 5rem;  
 }
-.hero-logo {
-    width: 12rem;
-    margin-bottom: 20px;
-}
+
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
+
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
-.hero-buttons .btn {
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.3s;
-}
-
 /* Contact Section */
 .contact-container {
     max-width: 900px;
